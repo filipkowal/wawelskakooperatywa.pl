@@ -126,15 +126,25 @@ header.hero {
 }
 
 .hero-overlay {
-  width: var(--section-width);
+  max-width: var(--section-width);
   margin: 0 auto;
   text-align: left;
-  padding: 2em;
+  padding: 1.5em;
   border-radius: 8px;
 }
 
-.hero-overlay-text {
-  max-width: 60%;
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 0;
+  }
+  .hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .hero-overlay-text {
+    max-width: 100%;
+  }
 }
 
 .hero-overlay h2 {
@@ -143,6 +153,13 @@ header.hero {
   font-weight: 500;
   margin-bottom: -1.2em;
   color: var(--color-green);
+}
+
+@media (max-width: 768px) {
+  .hero-overlay h2 {
+    font-size: 1.2rem;
+    margin-bottom: -0.5em;
+  }
 }
 
 section {
@@ -286,10 +303,6 @@ footer {
 
   header.hero {
     padding: 4em 1em;
-  }
-
-  .hero-overlay {
-    padding: 1.5em;
   }
 
   section {
