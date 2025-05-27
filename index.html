@@ -4,13 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wawelska Kooperatywa Spożywcza</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="./images/favicon.webp" />
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dgvzc44x0/image/upload/w_1920/v1748344738/koop-wall_db6bso.webp" />
+    <style>
+      /* Critical CSS */
+      :root {
+        --section-width: 56rem;
+        --color-pink: #db0077;
+        --color-green: #337357;
+        --color-asparagus: #6d9f71;
+        --color-eggshell: #e4e3d3;
+        --color-blue: #2e2d4d;
+      }
+      
+      body {
+        margin: 0;
+        font-family: "Inter", Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--color-blue);
+        background-color: var(--color-eggshell);
+      }
+
+      header.hero {
+        color: white;
+        text-align: center;
+        padding: 6em 1em;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .hero-overlay {
+        position: relative;
+        max-width: var(--section-width);
+        margin: 0 auto;
+        text-align: left;
+        padding: 1.5em;
+        border-radius: 8px;
+        z-index: 1;
+      }
+
+      h1 {
+        font-family: "Brygada_1918", serif;
+        font-weight: 500;
+        font-size: 7.5rem;
+        margin-bottom: 0.5em;
+        line-height: 1.2;
+        color: var(--color-green);
+      }
+
+      h2 {
+        font-family: "Brygada_1918", serif;
+        font-weight: 500;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-bottom: -1.2em;
+        color: var(--color-green);
+      }
+
+      h3 {
+        font-family: "Brygada_1918", serif;
+        font-weight: 500;
+        font-size: 1.6rem;
+        margin-bottom: 0.5em;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'" />
   </head>
   <body>
     <header class="hero">
       <img 
-        src="https://res.cloudinary.com/dgvzc44x0/image/upload/v1748344738/koop-wall_db6bso.webp"
+        src="https://res.cloudinary.com/dgvzc44x0/image/upload/w_1920/v1748344738/koop-wall_db6bso.webp"
         srcset="https://res.cloudinary.com/dgvzc44x0/image/upload/w_400/v1748344738/koop-wall_db6bso.webp 400w,
                 https://res.cloudinary.com/dgvzc44x0/image/upload/w_800/v1748344738/koop-wall_db6bso.webp 800w,
                 https://res.cloudinary.com/dgvzc44x0/image/upload/w_1200/v1748344738/koop-wall_db6bso.webp 1200w,
@@ -21,6 +94,8 @@
         sizes="100vw"
         alt="Wawelska Kooperatywa Spożywcza background"
         class="hero-background"
+        loading="eager"
+        fetchpriority="high"
       />
       <div class="hero-overlay">
         <div class="hero-overlay-text">
