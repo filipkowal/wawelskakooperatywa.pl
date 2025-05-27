@@ -114,23 +114,31 @@ li:not(:has(strong)) {
 }
 
 header.hero {
-  background: url("background.jpg") center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 6em 1em;
   position: relative;
-  background-image: url("./images/koop-wall.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .hero-overlay {
+  position: relative;
   max-width: var(--section-width);
   margin: 0 auto;
   text-align: left;
   padding: 1.5em;
   border-radius: 8px;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
