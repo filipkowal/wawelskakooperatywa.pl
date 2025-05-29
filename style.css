@@ -9,28 +9,19 @@
 
 @font-face {
   font-family: "Brygada_1918";
-  src: url("./fonts/Brygada_1918/Brygada1918-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("./fonts/Brygada_1918/Brygada1918-VariableFont_wght.woff2")
+      format("woff2"),
+    url("./fonts/Brygada_1918/Brygada1918-VariableFont_wght.ttf")
+      format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Brygada_1918";
-  src: url("./fonts/Brygada_1918/Brygada1918-Italic-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("./fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("./fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
-    format("truetype");
+  src: url("./fonts/Brygada_1918/Brygada1918-Italic-VariableFont_wght.woff2")
+      format("woff2"),
+    url("./fonts/Brygada_1918/Brygada1918-Italic-VariableFont_wght.ttf")
+      format("truetype");
   font-weight: normal;
   font-style: italic;
 }
