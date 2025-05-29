@@ -7,29 +7,10 @@
   --color-blue: #2e2d4d;
 }
 
-@font-face {
-  font-family: "Brygada_1918";
-  src: url("./fonts/Brygada_1918/Brygada1918-VariableFont_wght.woff2")
-      format("woff2"),
-    url("./fonts/Brygada_1918/Brygada1918-VariableFont_wght.ttf")
-      format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Brygada_1918";
-  src: url("./fonts/Brygada_1918/Brygada1918-Italic-VariableFont_wght.woff2")
-      format("woff2"),
-    url("./fonts/Brygada_1918/Brygada1918-Italic-VariableFont_wght.ttf")
-      format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
 /* Base styles */
 body {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Brygada 1918", serif;
   line-height: 1.6;
   color: var(--color-blue);
   background-color: var(--color-eggshell);
@@ -40,7 +21,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Brygada_1918", serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 500;
 }
 
@@ -67,22 +48,6 @@ h5 {
   margin-bottom: 0.5em;
   text-transform: uppercase;
   color: var(--color-green);
-}
-
-p,
-li,
-label,
-input,
-button,
-blockquote,
-.features > div,
-.products ul,
-.products li,
-.contact-info,
-.contact-info > div,
-.contact-info form,
-footer {
-  font-family: "Brygada_1918", Arial, sans-serif;
 }
 
 p,
